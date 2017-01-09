@@ -20,6 +20,9 @@ requirements:
     - numpy x.x
     - cython
     - scipy
+    - matplotlib
+    - pyparsing
+    - pytables
 
   run:
     - python
