@@ -19,6 +19,7 @@ requirements:
     - python
     - numpy x.x
     - cython
+    - scipy
 
   run:
     - python
