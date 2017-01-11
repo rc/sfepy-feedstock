@@ -13,13 +13,17 @@ source:
 
 build:
   number: 0
-  skip: true
+  skip: true  # [py>35]
 
 requirements:
   build:
     - python
     - numpy x.x
     - cython
+    - scipy
+    - matplotlib
+    - pyparsing
+    - pytables
 
   run:
     - python
