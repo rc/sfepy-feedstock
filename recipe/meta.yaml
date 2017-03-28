@@ -12,8 +12,7 @@ source:
   git_rev: {{ rev }}
 
 build:
-  number: 0
-  skip: true  # [py>35]
+  number: 1
 
 requirements:
   build:
