@@ -1,7 +1,7 @@
-{% set rev = "release_2017.2" %}
+{% set rev = "release_2017.3" %}
 {% set name = "sfepy" %}
 {% set org = "sfepy" %}
-{% set version = "2017.2" %}
+{% set version = "2017.3" %}
 
 package:
   name: {{ name }}
