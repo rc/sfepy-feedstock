@@ -14,14 +14,16 @@ SfePy is a software for solving systems of coupled partial differential equation
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/sfepy-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/sfepy-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/sfepy-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/sfepy-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/sfepy-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/sfepy-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/sfepy-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/sfepy-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/sfepy-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/sfepy-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/sfepy-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/sfepy-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/sfepy/badges/version.svg)](https://anaconda.org/conda-forge/sfepy)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/sfepy/badges/downloads.svg)](https://anaconda.org/conda-forge/sfepy)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-sfepy-green.svg)](https://anaconda.org/conda-forge/sfepy) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/sfepy.svg)](https://anaconda.org/conda-forge/sfepy) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/sfepy.svg)](https://anaconda.org/conda-forge/sfepy) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/sfepy.svg)](https://anaconda.org/conda-forge/sfepy) |
 
 Installing sfepy
 ================
