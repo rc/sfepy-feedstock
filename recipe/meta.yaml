@@ -21,7 +21,6 @@ requirements:
     - cython
     - scipy
     - pyparsing
-    - mkl
     - pytables=3.3.*
     - matplotlib
 
