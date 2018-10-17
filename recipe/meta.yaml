@@ -12,7 +12,7 @@ source:
   git_rev: {{ rev }}
 
 build:
-  number: 1
+  number: 2
 
 requirements:
   build:
@@ -21,7 +21,8 @@ requirements:
     - cython
     - scipy
     - pyparsing
-    - pytables
+    - mkl
+    - pytables=3.3.*
     - matplotlib
 
   run:
