@@ -48,7 +48,6 @@ install:
     - cmd: run_conda_forge_build_setup
 
     # Add info list
-    - cmd: conda.exe install -c default pytables
     - cmd: conda.exe info
     - cmd: conda.exe list
 
