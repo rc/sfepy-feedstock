@@ -1,7 +1,7 @@
-{% set rev = "release_2018.2" %}
+{% set rev = "release_2018.3" %}
 {% set name = "sfepy" %}
 {% set org = "sfepy" %}
-{% set version = "2018.2" %}
+{% set version = "2018.3" %}
 
 package:
   name: {{ name }}
@@ -17,22 +17,22 @@ build:
 requirements:
   build:
     - python
-    - numpy 1.11.*
+    - numpy>=1.11.*
     - cython
     - scipy
-    - matplotlib
     - pyparsing
-    - pytables
+    - pytables=3.3.*
+    - matplotlib
 
   run:
     - python
-    - numpy >=1.11
+    - {{ pin_compatible('numpy') }}
     - scipy
     - pyparsing
-    - sympy
     - pytables
-    - mpi4py
     - matplotlib
+    - sympy
+    - mpi4py
 
 test:
   imports:
