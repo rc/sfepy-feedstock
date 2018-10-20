@@ -14,9 +14,9 @@ SfePy is a software for solving systems of coupled partial differential equation
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/SfePy-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/SfePy-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/SfePy-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/SfePy-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/SfePy-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/SfePy-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/sfepy-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/sfepy-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/sfepy-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/sfepy-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/sfepy-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/sfepy-feedstock/branch/master)
 
 Current release info
 ====================
