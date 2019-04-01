@@ -39,9 +39,11 @@ test:
   source_files:
     - run_tests.py
     - tests/
-    
-  imports:
-    - sfepy
+    - examples/
+    - meshes/
+
+  commands:
+    - python run_tests.py
 
 about:
   home: http://{{ name }}.org
