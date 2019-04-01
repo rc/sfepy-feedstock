@@ -36,6 +36,9 @@ requirements:
     - mpi4py
 
 test:
+  source_files:
+    - run_tests.py
+    
   imports:
     - sfepy
 
