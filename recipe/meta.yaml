@@ -38,6 +38,7 @@ requirements:
 test:
   source_files:
     - run_tests.py
+    - tests/
     
   imports:
     - sfepy
