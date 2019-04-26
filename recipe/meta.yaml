@@ -1,7 +1,7 @@
-{% set rev = "release_2018.4" %}
+{% set rev = "release_2019.1.1" %}
 {% set name = "sfepy" %}
 {% set org = "sfepy" %}
-{% set version = "2018.4" %}
+{% set version = "2019.1.1" %}
 
 package:
   name: {{ name }}
@@ -12,31 +12,41 @@ source:
   git_rev: {{ rev }}
 
 build:
+  noarch: python
   number: 0
+  script: "{{ PYTHON }} setup.py install --single-version-externally-managed --record record.txt"
 
 requirements:
   build:
+    - {{ compiler('c') }}
+
+  host:
     - python
-    - numpy>=1.11.*
     - cython
+    - numpy
     - scipy
     - pyparsing
-    - pytables=3.3.*
+    - pytables
     - matplotlib
 
   run:
-    - python
-    - {{ pin_compatible('numpy') }}
+    - {{ pin_compatible('python') }}
+    - numpy
     - scipy
     - pyparsing
     - pytables
     - matplotlib
     - sympy
-    - mpi4py
 
 test:
-  imports:
-    - sfepy
+  source_files:
+    - run_tests.py
+    - tests/
+    - examples/
+    - meshes/
+
+  commands:
+    - python run_tests.py
 
 about:
   home: http://{{ name }}.org
