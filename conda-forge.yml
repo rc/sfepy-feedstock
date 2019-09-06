@@ -7,4 +7,4 @@ appveyor:
 provider:
   osx: travis
   linux: circle
-  win: appveyor
+  win: azure
