@@ -1,7 +1,7 @@
-{% set rev = "release_2019.2" %}
+{% set rev = "release_2019.3" %}
 {% set name = "sfepy" %}
 {% set org = "sfepy" %}
-{% set version = "2019.2" %}
+{% set version = "2019.3" %}
 
 package:
   name: {{ name }}
@@ -12,9 +12,8 @@ source:
   git_rev: {{ rev }}
 
 build:
-  noarch: python
   number: 0
-  script: "{{ PYTHON }} setup.py install --single-version-externally-managed --record record.txt"
+  script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
   build:
@@ -30,7 +29,7 @@ requirements:
     - matplotlib
 
   run:
-    - {{ pin_compatible('python') }}
+    - python
     - numpy
     - scipy
     - pyparsing
