@@ -22,7 +22,7 @@ jobs:
           # Run, test and (if we have a BINSTAR_TOKEN) upload the distributions.
           command: |
             export CI=circle
-            ./.circleci/run_docker_build.sh
+            ./.scripts/run_docker_build.sh
   build_linux_python3.6:
     working_directory: ~/test
     machine: true
@@ -40,7 +40,7 @@ jobs:
           # Run, test and (if we have a BINSTAR_TOKEN) upload the distributions.
           command: |
             export CI=circle
-            ./.circleci/run_docker_build.sh
+            ./.scripts/run_docker_build.sh
   build_linux_python3.7:
     working_directory: ~/test
     machine: true
@@ -58,7 +58,25 @@ jobs:
           # Run, test and (if we have a BINSTAR_TOKEN) upload the distributions.
           command: |
             export CI=circle
-            ./.circleci/run_docker_build.sh
+            ./.scripts/run_docker_build.sh
+  build_linux_python3.8:
+    working_directory: ~/test
+    machine: true
+    environment:
+      - CONFIG: "linux_python3.8"
+        DOCKER_IMAGE: "condaforge/linux-anvil-comp7"
+    steps:
+      - checkout
+      - run:
+          name: Fast finish outdated PRs and merge PRs
+          command: |
+            ./.circleci/fast_finish_ci_pr_build.sh
+            ./.circleci/checkout_merge_commit.sh
+      - run:
+          # Run, test and (if we have a BINSTAR_TOKEN) upload the distributions.
+          command: |
+            export CI=circle
+            ./.scripts/run_docker_build.sh
 
 workflows:
   version: 2
@@ -67,3 +85,4 @@ workflows:
       - build_linux_python2.7
       - build_linux_python3.6
       - build_linux_python3.7
+      - build_linux_python3.8
