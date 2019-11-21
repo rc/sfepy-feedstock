@@ -1,19 +1,16 @@
-{% set rev = "release_2019.3" %}
-{% set name = "sfepy" %}
-{% set org = "sfepy" %}
 {% set version = "2019.3" %}
 
 package:
-  name: {{ name }}
+  name: sfepy
   version: {{ version }}
 
 source:
-  git_url: https://github.com/{{ org }}/{{ name }}.git
-  git_rev: {{ rev }}
+  url: https://github.com/sfepy/sfepy/archive/release_{{ version }}.tar.gz
+  sha256: 0b4c7741c5877762523a931e669b2afdbc2b44118ab0c4413ce9dc19c8b787c0
 
 build:
-  number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 1
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
@@ -21,20 +18,19 @@ requirements:
 
   host:
     - python
+    - pip
     - cython
     - numpy
     - scipy
-    - pyparsing
     - pytables
-    - matplotlib
-
+    - matplotlib-base
   run:
     - python
-    - numpy
+    - {{ pin_compatible('numpy') }}
     - scipy
     - pyparsing
     - pytables
-    - matplotlib
+    - matplotlib-base
     - sympy
 
 test:
@@ -43,12 +39,11 @@ test:
     - tests/
     - examples/
     - meshes/
-
   commands:
     - python run_tests.py
 
 about:
-  home: http://{{ name }}.org
+  home: http://sfepy.org
   license: BSD-3-Clause
   license_file: LICENSE
   summary: "Simple finite elements in Python"
