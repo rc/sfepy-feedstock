@@ -1,7 +1,7 @@
-{% set rev = "release_2019.3" %}
+{% set rev = "f82c806d0809a93d0017a4435fd20eb0d7ff0001" %}
 {% set name = "sfepy" %}
 {% set org = "sfepy" %}
-{% set version = "2019.3" %}
+{% set version = "2019.4" %}
 
 package:
   name: {{ name }}
