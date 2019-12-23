@@ -1,4 +1,4 @@
-{% set rev = "f82c806d0809a93d0017a4435fd20eb0d7ff0001" %}
+{% set rev = "release_2019.4" %}
 {% set name = "sfepy" %}
 {% set org = "sfepy" %}
 {% set version = "2019.4" %}
