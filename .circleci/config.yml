@@ -22,7 +22,7 @@ jobs:
           # Run, test and (if we have a BINSTAR_TOKEN) upload the distributions.
           command: |
             export CI=circle
-            ./.circleci/run_docker_build.sh
+            ./.scripts/run_docker_build.sh
   build_linux_python3.6:
     working_directory: ~/test
     machine: true
@@ -40,7 +40,7 @@ jobs:
           # Run, test and (if we have a BINSTAR_TOKEN) upload the distributions.
           command: |
             export CI=circle
-            ./.circleci/run_docker_build.sh
+            ./.scripts/run_docker_build.sh
   build_linux_python3.7:
     working_directory: ~/test
     machine: true
@@ -58,7 +58,7 @@ jobs:
           # Run, test and (if we have a BINSTAR_TOKEN) upload the distributions.
           command: |
             export CI=circle
-            ./.circleci/run_docker_build.sh
+            ./.scripts/run_docker_build.sh
 
 workflows:
   version: 2

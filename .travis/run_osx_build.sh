@@ -28,8 +28,6 @@ setup_conda_rc ./ ./recipe ./.ci_support/${CONFIG}.yaml
 
 
 source run_conda_forge_build_setup
-
-
 echo -en 'travis_fold:end:configure_conda\\r'
 
 set -e
