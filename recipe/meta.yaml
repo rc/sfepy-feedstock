@@ -1,4 +1,4 @@
-{% set version = "2019.3" %}
+{% set version = "2019.4" %}
 
 package:
   name: sfepy
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/sfepy/sfepy/archive/release_{{ version }}.tar.gz
-  sha256: 0b4c7741c5877762523a931e669b2afdbc2b44118ab0c4413ce9dc19c8b787c0
+  sha256: f67fa36131a17c782ebba14d6b7211daeefb1d3276d1ef1ee4cbd004387b3bd1
 
 build:
   number: 1
@@ -15,7 +15,6 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
-
   host:
     - python
     - pip
