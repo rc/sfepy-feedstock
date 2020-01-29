@@ -5,11 +5,13 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/sfepy/sfepy/archive/release_{{ version }}.tar.gz
-  sha256: f67fa36131a17c782ebba14d6b7211daeefb1d3276d1ef1ee4cbd004387b3bd1
+  # url: https://github.com/sfepy/sfepy/archive/release_{{ version }}.tar.gz
+  # sha256: f67fa36131a17c782ebba14d6b7211daeefb1d3276d1ef1ee4cbd004387b3bd1
+  url: https://github.com/sfepy/sfepy/archive/a216545454eca7d806ef30bc7fce21434217bcd3.zip
+  sha256: 7b23038a0981058a07ccccedf0c0d8199d599fc2c01684d1eab0b1969f399df0
 
 build:
-  number: 1
+  number: 2
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
