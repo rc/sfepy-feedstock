@@ -27,6 +27,7 @@ requirements:
     - pyparsing
     - pytables
     - matplotlib
+    - importlib_metadata
     - meshio
 
   run:
@@ -36,6 +37,7 @@ requirements:
     - pyparsing
     - pytables
     - matplotlib
+    - importlib_metadata
     - meshio
     - sympy
 
