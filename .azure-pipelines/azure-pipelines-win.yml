@@ -18,11 +18,15 @@ jobs:
         CONFIG: win_python3.7.____cpython
         CONDA_BLD_PATH: D:\\bld\\
         UPLOAD_PACKAGES: True
+      win_python3.8.____cpython:
+        CONFIG: win_python3.8.____cpython
+        CONDA_BLD_PATH: D:\\bld\\
+        UPLOAD_PACKAGES: True
   steps:
     # TODO: Fast finish on azure pipelines?
     - script: |
         ECHO ON
-        
+
 
     - script: |
         choco install vcpython27 -fdv -y --debug
@@ -75,7 +79,7 @@ jobs:
         set "CI=azure"
         run_conda_forge_build_setup
       displayName: conda-forge build setup
-    
+
 
     - script: |
         rmdir C:\strawberry /s /q
