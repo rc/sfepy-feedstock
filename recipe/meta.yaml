@@ -1,17 +1,15 @@
-{% set version = "2020.1" %}
+{% set version = "2020.2" %}
 
 package:
   name: sfepy
   version: {{ version }}
 
 source:
-  # url: https://github.com/sfepy/sfepy/archive/release_{{ version }}.tar.gz
-  # sha256: f67fa36131a17c782ebba14d6b7211daeefb1d3276d1ef1ee4cbd004387b3bd1
-  url: https://github.com/sfepy/sfepy/archive/a216545454eca7d806ef30bc7fce21434217bcd3.zip
-  sha256: 7b23038a0981058a07ccccedf0c0d8199d599fc2c01684d1eab0b1969f399df0
+  url: https://github.com/sfepy/sfepy/archive/release_{{ version }}.zip
+  sha256: 63ef048ffe9d972e96b88806059f32a94f3bfb954cfbbcbc4c44736188df6d9a
 
 build:
-  number: 2
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
