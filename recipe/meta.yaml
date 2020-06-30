@@ -37,6 +37,7 @@ requirements:
     - importlib_metadata
     - meshio
     - sympy
+    - psutil
 
 test:
   source_files:
