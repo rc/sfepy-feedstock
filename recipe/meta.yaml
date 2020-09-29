@@ -1,4 +1,4 @@
-{% set version = "2020.2" %}
+{% set version = "2020.3" %}
 
 package:
   name: sfepy
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/sfepy/sfepy/archive/release_{{ version }}.zip
-  sha256: 63ef048ffe9d972e96b88806059f32a94f3bfb954cfbbcbc4c44736188df6d9a
+  sha256: 049f61d3f69a85ce716fbf366b7a9bbe9a0606a8f31bd0867cd846e83f819875
 
 build:
   number: 0
