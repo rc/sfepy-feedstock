@@ -10,20 +10,24 @@ env:
 
 matrix:
   include:
-    - env: CONFIG=osx_python3.6.____cpython UPLOAD_PACKAGES=True PLATFORM=osx-64
+    - env: CONFIG=osx_64_python3.6.____cpython UPLOAD_PACKAGES=True PLATFORM=osx-64
       os: osx
-      osx_image: xcode9.4
+      osx_image: xcode12u
+      arch: amd64
 
-    - env: CONFIG=osx_python3.7.____cpython UPLOAD_PACKAGES=True PLATFORM=osx-64
+    - env: CONFIG=osx_64_python3.7.____cpython UPLOAD_PACKAGES=True PLATFORM=osx-64
       os: osx
-      osx_image: xcode9.4
+      osx_image: xcode12u
+      arch: amd64
 
-    - env: CONFIG=osx_python3.8.____cpython UPLOAD_PACKAGES=True PLATFORM=osx-64
+    - env: CONFIG=osx_64_python3.8.____cpython UPLOAD_PACKAGES=True PLATFORM=osx-64
       os: osx
-      osx_image: xcode9.4
+      osx_image: xcode12u
+      arch: amd64
 
 script:
   - export CI=travis
   - export GIT_BRANCH="$TRAVIS_BRANCH"
+  - export FEEDSTOCK_NAME=$(basename ${TRAVIS_REPO_SLUG})
 
   - if [[ ${PLATFORM} =~ .*osx.* ]]; then ./.scripts/run_osx_build.sh; fi
