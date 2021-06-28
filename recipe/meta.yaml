@@ -44,7 +44,7 @@ test:
     - examples/
     - meshes/
   commands:
-    - python run_tests.py
+    - python run_tests.py --filter-none
 
 about:
   home: http://sfepy.org
