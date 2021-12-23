@@ -1,4 +1,4 @@
-{% set version = "2021.3" %}
+{% set version = "2021.4" %}
 
 package:
   name: sfepy
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/sfepy/sfepy/archive/release_{{ version }}.zip
-  sha256: 822407595e0af5aeaca6ca50e88e46658b5021e177244cbb763dd260e94eda81
+  sha256: 4bb2609f838719993f33a5ce20b815a7f1771f18a883e959df2740b17d770e42
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
     - pytables
     - matplotlib-base
     - importlib_metadata
-    - meshio
+    - meshio 4.4.6
   run:
     - python
     - {{ pin_compatible('numpy') }}
@@ -33,7 +33,7 @@ requirements:
     - pytables
     - matplotlib-base
     - importlib_metadata
-    - meshio
+    - meshio 4.4.6
     - sympy
     - psutil
 
