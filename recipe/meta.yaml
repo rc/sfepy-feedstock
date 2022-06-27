@@ -1,4 +1,4 @@
-{% set version = "2022.1" %}
+{% set version = "2022.2" %}
 
 package:
   name: sfepy
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/sfepy/sfepy/archive/release_{{ version }}.zip
-  sha256: 4dded0b6eae258e99286dd13c0464a463d81ad7646c98381fb63cca9bf2617b8
+  sha256: 6b8b11f5f7225f69b1688da7e49c56b3b8169bd46976e97ab16cce64fe3026bd
 
 build:
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
@@ -38,13 +38,12 @@ requirements:
     - psutil
 
 test:
+  requires:
+    - pytest
   source_files:
-    - run_tests.py
-    - tests/
-    - examples/
     - meshes/
   commands:
-    - python run_tests.py --filter-none
+    - python -c "import sfepy, sys; sys.exit(sfepy.test())"
 
 about:
   home: http://sfepy.org
