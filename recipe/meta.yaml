@@ -26,7 +26,7 @@ requirements:
     - setuptools <60.0
     - pip
     - cython
-    - numpy
+    - numpy >=1.17
     - scipy
     - pytables
     - matplotlib-base
