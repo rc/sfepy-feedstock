@@ -1,12 +1,14 @@
-{% set version = "2022.4" %}
+{% set version = "2023.1" %}
 
 package:
   name: sfepy
   version: {{ version }}
 
 source:
-  url: https://github.com/sfepy/sfepy/archive/release_{{ version }}.zip
-  sha256: 2bb2fa068839a0404ef674effe1148c1c02b8b976e1d16ac3db59626999c76f7
+#  url: https://github.com/sfepy/sfepy/archive/release_{{ version }}.zip
+#  sha256: 2bb2fa068839a0404ef674effe1148c1c02b8b976e1d16ac3db59626999c76f7
+  url: https://github.com/yosefm/sfepy/archive/refs/heads/numpy-distutils-byebye.zip
+  sha256: 06d88c0f5bc4962c2de041d8846ca19218d16db38483345fcbed46aad00fa4a9
 
 build:
   number: 0
@@ -24,7 +26,8 @@ requirements:
     - {{ compiler('c') }}
   host:
     - python
-    - setuptools <60.0
+    - scikit-build >=0.16.7
+    - setuptools >=46.4
     - pip
     - cython
     - numpy >=1.17
