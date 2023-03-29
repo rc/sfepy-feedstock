@@ -1,11 +1,11 @@
-About sfepy
-===========
+About sfepy-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sfepy-feedstock/blob/main/LICENSE.txt)
 
 Home: http://sfepy.org
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sfepy-feedstock/blob/main/LICENSE.txt)
 
 Summary: Simple finite elements in Python
 
