@@ -5,11 +5,13 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/sfepy/sfepy/archive/release_{{ version }}.zip
-  sha256: 9279916fcb95a8b540c02a067e037f3fe91a8e1e36163a354c0d3cd1bf7b5340
+#  url: https://github.com/sfepy/sfepy/archive/release_{{ version }}.zip
+#  sha256: 9279916fcb95a8b540c02a067e037f3fe91a8e1e36163a354c0d3cd1bf7b5340
+  url: https://github.com/yosefm/sfepy/archive/refs/heads/numpy-distutils-byebye.zip
+  sha256: d129a8f6c67bedbd5c273877fdbcf1f0ec42442836ba90e97b0b2ffce5276e91
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - sfepy-convert = sfepy.scripts.convert_mesh:main
     - sfepy-mesh = sfepy.scripts.gen_mesh:main
