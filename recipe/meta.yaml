@@ -1,4 +1,4 @@
-{% set version = "2023.1" %}
+{% set version = "2023.2" %}
 
 package:
   name: sfepy
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/sfepy/sfepy/archive/release_{{ version }}.zip
-  sha256: 9279916fcb95a8b540c02a067e037f3fe91a8e1e36163a354c0d3cd1bf7b5340
+  sha256: 1f75c0c06d234b2d1298b825aa1752ec1f03c8a69c91b8b40c06631cd40a728c
 
 build:
   number: 0
@@ -22,6 +22,8 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - cmake
+    - ninja
   host:
     - python
     - scikit-build >=0.16.7
