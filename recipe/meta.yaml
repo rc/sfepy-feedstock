@@ -1,4 +1,4 @@
-{% set version = "2023.4" %}
+{% set version = "2024.1" %}
 
 package:
   name: sfepy
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/sfepy/sfepy/archive/release_{{ version }}.zip
-  sha256: 050486154cdbbd9ff83a205390091493c6c350e94fe28a812066c4d969bce4fa
+  sha256: f9bbf7e8a0134ea58712bed06e2cd2bc260b633a37f99080e5eec14834043973
 
 build:
   number: 0
@@ -50,7 +50,7 @@ requirements:
 
 test:
   requires:
-    - pytest
+    - pytest <=7.4.4
   source_files:
     - meshes/
   commands:
