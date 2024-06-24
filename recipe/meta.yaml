@@ -5,8 +5,10 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/sfepy/sfepy/archive/release_{{ version }}.zip
-  sha256: f9bbf7e8a0134ea58712bed06e2cd2bc260b633a37f99080e5eec14834043973
+#  url: https://github.com/sfepy/sfepy/archive/release_{{ version }}.zip
+#  sha256: f9bbf7e8a0134ea58712bed06e2cd2bc260b633a37f99080e5eec14834043973
+  url: https://github.com/rc/sfepy/archive/fdc6b581983c57d5c7e18b04d9879f443b1aca3b.zip
+  sha256: a77ec6c7ed887474a45b8339f3144d47ab61b9262b43406c9d8b25936e6860d8
 
 build:
   number: 1
@@ -31,7 +33,7 @@ requirements:
     - setuptools >=46.4
     - pip
     - cython <3.0
-    - numpy >=1.17, <2
+    - numpy >=1.17,<2.0
     - scipy
     - pytables
     - matplotlib-base
