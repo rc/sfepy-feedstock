@@ -9,7 +9,7 @@ source:
   sha256: f9bbf7e8a0134ea58712bed06e2cd2bc260b633a37f99080e5eec14834043973
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - sfepy-convert = sfepy.scripts.convert_mesh:main
     - sfepy-mesh = sfepy.scripts.gen_mesh:main
@@ -22,6 +22,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - cmake
     - ninja
   host:
@@ -38,7 +39,6 @@ requirements:
     - meshio 4.4.6
   run:
     - python
-    - {{ pin_compatible('numpy') }}
     - scipy
     - pyparsing
     - pytables
