@@ -31,6 +31,7 @@ requirements:
     - setuptools >=46.4
     - pip
     - cython <3.0
+    - numpy <2.0dev0
     - numpy >=1.17
     - scipy
     - pytables
@@ -40,7 +41,7 @@ requirements:
   run:
     - numpy <2.0dev0
     - python
-    - scipy
+    - scipy <=1.13.0
     - pyparsing
     - pytables
     - matplotlib-base
