@@ -36,7 +36,7 @@ requirements:
     - scipy
     - pytables
     - matplotlib-base
-    - importlib_metadata
+    - importlib-metadata
     - meshio 4.4.6
   run:
     - numpy <2.0dev0
