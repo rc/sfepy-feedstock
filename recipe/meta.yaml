@@ -44,7 +44,7 @@ requirements:
     - pyparsing
     - pytables
     - matplotlib-base
-    - importlib_metadata
+    - importlib-metadata
     - meshio
     - sympy
     - psutil
