@@ -1,4 +1,4 @@
-{% set version = "2024.1" %}
+{% set version = "2024.2" %}
 
 package:
   name: sfepy
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/sfepy/sfepy/archive/release_{{ version }}.zip
-  sha256: f9bbf7e8a0134ea58712bed06e2cd2bc260b633a37f99080e5eec14834043973
+  sha256: 355db39e4153f4d55bc97062bcca3539c3e027dac4f74630f92ed3b4626fcb43
 
 build:
-  number: 1
+  number: 0
   entry_points:
     - sfepy-convert = sfepy.scripts.convert_mesh:main
     - sfepy-mesh = sfepy.scripts.gen_mesh:main
