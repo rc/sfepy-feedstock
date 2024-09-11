@@ -38,13 +38,14 @@ requirements:
     - importlib_metadata
     - meshio 4.4.6
   run:
+    - numpy <2.0dev0
     - python
     - scipy
     - pyparsing
     - pytables
     - matplotlib-base
     - importlib_metadata
-    - meshio 4.4.6
+    - meshio
     - sympy
     - psutil
 
