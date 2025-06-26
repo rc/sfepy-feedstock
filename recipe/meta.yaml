@@ -31,15 +31,14 @@ requirements:
     - setuptools >=46.4
     - pip
     - cython
-    - numpy <2.0dev0
-    - numpy >=1.17
+    - numpy
     - scipy
     - pytables
     - matplotlib-base
     - importlib-metadata
-    - meshio 4.4.6
+    - meshio
   run:
-    - numpy <2.0dev0
+    - numpy
     - python
     - scipy
     - pyparsing
@@ -52,7 +51,7 @@ requirements:
 
 test:
   requires:
-    - pytest <=7.4.4
+    - pytest
   source_files:
     - meshes/
   commands:
