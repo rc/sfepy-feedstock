@@ -10,6 +10,7 @@ source:
 
 build:
   number: 0
+  skip: true  # [win and py<311]
   entry_points:
     - sfepy-convert = sfepy.scripts.convert_mesh:main
     - sfepy-mesh = sfepy.scripts.gen_mesh:main
