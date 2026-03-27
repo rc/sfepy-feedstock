@@ -2,7 +2,7 @@
 
 package:
   name: sfepy
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   url: https://github.com/sfepy/sfepy/archive/release_{{ version }}.zip
